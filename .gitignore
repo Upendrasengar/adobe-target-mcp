@@ -1,0 +1,14 @@
+# Node modules
+node_modules/
+
+# Environment variables — never commit real credentials
+.env*
+!.env.example
+
+# Editor / tool artifacts
+.history
+.kiro/
+.DS_Store
+
+# Logs
+*.log

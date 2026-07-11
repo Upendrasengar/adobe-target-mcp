@@ -1,0 +1,55 @@
+{
+  "name": "@upendra_sengar/adobe-target-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for Adobe Target — manage A/B and XT activities via the Adobe Target Admin API with automatic IMS OAuth token handling",
+  "type": "module",
+  "main": "mcpServer.js",
+  "bin": {
+    "adobe-target-mcp": "mcpServer.js"
+  },
+  "files": [
+    "mcpServer.js",
+    "index.js",
+    "lib",
+    "tools",
+    "commands",
+    ".env.example"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "start": "node mcpServer.js",
+    "start:http": "node mcpServer.js --streamable-http",
+    "start:sse": "node mcpServer.js --sse",
+    "list-tools": "node index.js tools"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.17.0",
+    "commander": "^13.1.0",
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "adobe-target",
+    "adobe",
+    "ab-testing",
+    "personalization",
+    "ai"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/upendrasengar/adobe-target-mcp.git"
+  },
+  "homepage": "https://github.com/upendrasengar/adobe-target-mcp#readme",
+  "bugs": {
+    "url": "https://github.com/upendrasengar/adobe-target-mcp/issues"
+  },
+  "author": "Upendra Sengar",
+  "license": "MIT"
+}
